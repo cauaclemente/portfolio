@@ -1,0 +1,172 @@
+.content-container{
+    height: 100vh;
+}
+
+.profile-content {
+    color: #333;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/novo-fundo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 430px;
+    height: 595px;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.name-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+    font-weight: bolder;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #d3d3d3;
+}
+
+.profile-image {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid red;
+    cursor: pointer;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+    transition: all 2s;
+}
+
+.profile-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    width: 80%;
+    margin-top: 3px;
+    color: #000;
+    cursor: pointer;
+}
+
+.divider {
+    width: 100%;
+    border-top: .5px solid #bfbfbf;
+    margin: 20px 0;
+}
+
+.social-midia {
+    width: 300px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.github,
+.linkedin {
+    font-size: 45px;
+    background-color: #0f0236;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.linkedin {
+    color: blue ;
+}
+
+.linkedin:hover {
+    background-color: #046565;
+    border: 2px solid #10b6c9;
+    color: blue;
+    border: none;
+    transition: 1s ease-in-out ;
+}
+
+.github {
+    color: #fff;
+}
+
+.github:hover {
+    background-color: #046565;
+    border: 2px solid #10b6c9;
+    color: #000;
+    border: none;
+    transition: 1s ease-in-out ;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: #d3d3d3;
+    font-weight: bolder;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 15px;
+}
+
+.test {
+    gap: 30px;
+    display: flex;
+}
+
+.test2 {
+    gap: 30px;
+    display: flex;
+}
+
+@media screen and (max-width: 930px) {
+    .content-container {
+        height: 150%;
+    }
+    .profile-content {
+       display: flex;
+       flex-direction: column;
+    }
+    .profile-card {
+        margin-top: 5%;
+        max-height: 120%;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-card {
+        width: 88%;
+        height: 660px;
+
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .profile-card {
+        width: 85%;
+        
+    }
+}
+

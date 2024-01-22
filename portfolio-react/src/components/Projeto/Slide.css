@@ -1,0 +1,235 @@
+*,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+   list-style-type: none;
+ }
+
+.container-slide {
+    width: 100%;
+    height: 110vh;
+    overflow: hidden;
+    padding: 0 4rem;
+    text-align: center;
+    background: linear-gradient(to top, #041132, #000);
+}
+
+.animation-cards {
+    animation: animate .8s ease-in-out .3s 1 forwards;
+}
+
+@keyframes animate {
+    from {
+        filter: blur(33px);
+        opacity: 0;
+        transform: translate(0, 100px);
+    }
+  
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(0);
+    }
+  }
+
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: rgb(237, 237, 237);
+    height: 10px;
+    width: 10px;
+}
+
+.swiper-button-next::after {
+    color: #0ef;
+    font-weight: bold;
+}
+
+.swiper-button-prev::after {
+    color: #0ef;
+    font-weight: bold;
+}
+
+.title-slide {
+    font-size: 60px;
+    color: #0ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.slide-item {
+    border-radius: 2rem;
+    border: none;
+    object-fit:cover;
+    width: 100%;
+}
+
+.slide-item img {
+    width: 100%;
+    height: 360px;
+    border: none;
+    border-radius: 10px;
+}
+
+.slide-item:hover {
+    transform: scale(1.05);
+}
+  
+.slide-item.hovered .slide-img {
+    filter: blur(10px);
+}
+  
+.portfolio-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+    font-weight: bold;
+    transition: 1s ease-in-out ;
+}
+  
+.portfolio-content.focused {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-1 .portfolio-content { 
+    color: #d3d3d3; 
+}
+
+.image-3 .portfolio-content h2 {
+    color: #d3d3d3;
+}
+
+.image-3 .tec-title {
+    color: #000;
+}
+
+.image-3 .slide-btn {
+    color: #000;
+    border: 2px solid #000;
+}
+
+.image-3 .slide-btn:hover {
+    background-color: #041132;
+    color: #d3d3d3;
+}
+
+.portfolio-content h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+    color: #d3d3d3; 
+}
+
+.links-container {
+    display: flex; 
+    justify-content: space-around; 
+    margin-top: 20px; 
+    gap: 15px;
+}
+  
+.links {
+    flex: 1; 
+}
+  
+.slide-btn {
+    background: transparent;
+    border-radius: 7px;
+    border: none;
+    border: 2px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 8px 18px;
+    position: relative;
+    transition: .5s ease;
+    z-index: 1;
+}
+
+.slide-btn:hover{
+    background-color: #000; 
+    transition: 1s ease-in-out;   
+}
+
+.tec-title {
+    margin-top: 10px;
+    color: #d3d3d3;
+}
+
+.technologies {
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio-content ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+  
+.portfolio-content li {
+    display: inline-block;
+    margin: 5px;
+    background-color: #717771; 
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff; 
+    font-size: 13px; 
+    font-weight: bold;
+    font-family: 'Arial', sans-serif; 
+}
+
+@media screen and (max-width: 950px) {
+    .portfolio-content li {
+        font-size: 10px;
+    }
+
+    .slide-btn {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title-slide {
+        font-size: 45px;
+        margin-top: 10%;
+    }
+
+   .portfolio-content {
+        width: 80%;
+        margin-left: 10%;
+   }
+}
+  
+@media screen and (max-width: 470px) {
+    .swiper-container {
+        width: 130%;
+        margin-left: -45px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .swiper-container {
+        width: 140%;
+    }
+}

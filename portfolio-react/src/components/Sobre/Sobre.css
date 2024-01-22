@@ -1,0 +1,66 @@
+.profile-sinopse{
+    width: 430px;
+    height: 595px;
+    overflow-y: scroll;
+    padding: 15px;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    margin-left: -8px;
+    text-align: justify;
+    background-color: #000;
+    border-radius: 8px;
+}
+
+.sobre {
+    color: #f00;
+    font-family: 'Oswald', sans-serif;
+    text-align: start;
+    font-size: 40px;
+    display: flex;
+}
+
+.curriculo {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f00;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.curriculo:hover {
+    background-color: #0ef;
+    color:#000 ;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 930px) {
+    .profile-sinopse {
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-sinopse {
+        width: 89%;
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .profile-sinopse {
+        width: 85%;
+        height: 70vh;
+    }
+
+    .curriculo {
+        width: 50%;
+    }
+}

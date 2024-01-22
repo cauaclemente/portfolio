@@ -1,0 +1,59 @@
+.icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.icon {
+    background-color: #190231; 
+    border-radius: 30%; 
+    padding: 5px; 
+    margin-top: 35px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon:hover {
+    border: none;
+    background-color: #046565;
+    border: 2px solid #10b6c9;
+    transition: ease-in-out 0.5s;
+    opacity: 1;
+}
+  
+.text-over-icon {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;  
+}
+  
+.icon-container:hover .text-over-icon {
+    opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+    .icon {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .icon {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 337px) {
+    .icon {
+        font-size: 20px;
+    }
+}
