@@ -130,7 +130,7 @@
 
 @media screen and (max-width: 480px) {
     .formulario-container {
-        height: 120vh;
+        height: 100vh;
     
     }
 
@@ -161,7 +161,3 @@
         width: 100%;
     }
 }
-
-/* width: 100%;
-    max-width: 1440px;
-    */

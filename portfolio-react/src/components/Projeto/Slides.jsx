@@ -92,7 +92,7 @@ const Projetos = () => {
   return (
     <>
       <section className='container-slide'>
-        <h1 className='title-slide'> Principais Projetos </h1>
+        <h1 className='title-slide'> Principais Projetos</h1>
         <div className='swiper-container'>
         <Swiper 
           className='animation-cards'
