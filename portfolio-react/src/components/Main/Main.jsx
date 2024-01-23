@@ -1,6 +1,7 @@
 import "./Main.css"
 import Apresentação from '../Sobre/Apresentacao'
 import Projetos from '../Projeto/Slides'
+import Contato from "../Formulario/Contato"
 
 const Inicio= () => {
   return (
@@ -16,6 +17,7 @@ const Inicio= () => {
       </main>
         <Apresentação />
         <Projetos />
+        <Contato />
     </>
   )
 }
