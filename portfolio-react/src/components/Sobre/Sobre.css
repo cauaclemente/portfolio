@@ -31,6 +31,7 @@
     justify-content: center;
     align-items: center;
     background-color: #f00;
+    color: #000;
     transition: 1s;
     cursor: pointer;
 }
@@ -57,7 +58,7 @@
 @media screen and (max-width: 390px) {
     .profile-sinopse {
         width: 85%;
-        height: 70vh;
+        height: 100vh;
     }
 
     .curriculo {

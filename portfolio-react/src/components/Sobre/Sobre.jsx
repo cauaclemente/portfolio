@@ -1,6 +1,6 @@
-import React from 'react'
+
 import "./Sobre.css"
-import caminhoDoPdf from "../assets/CurriculoCauaClemente .pdf"
+import caminhoDoPdf from "../assets/CurriculoCauaClemente .pdf" 
 
 const Sobre = () => {
   return (
@@ -30,7 +30,7 @@ const Sobre = () => {
           target="_blank"
           rel="noopener noreferrer"
           style={{textDecoration : "none"}}>
-          <button class="curriculo">Baixar CV</button>
+          <button className="curriculo">Baixar CV</button>
         </a>
         </div>
     </>

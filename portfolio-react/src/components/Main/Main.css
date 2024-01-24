@@ -87,7 +87,11 @@ h1 {
 }
 
 @media  screen and (max-width: 420px) {
-    .hero-container img {
-        background-position: 50%;
+    .hero-container {
+        background-position: 70%;
+    }
+
+    .arrows {
+        margin-top: 5%;
     }
 }

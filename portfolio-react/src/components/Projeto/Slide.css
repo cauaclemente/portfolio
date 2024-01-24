@@ -231,5 +231,6 @@
 @media screen and (max-width: 400px) {
     .swiper-container {
         width: 140%;
+        margin-bottom: 20%;
     }
 }
