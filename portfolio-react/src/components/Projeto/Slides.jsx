@@ -115,6 +115,7 @@ const Projetos = () => {
        {data.map((item) => (
           <SwiperSlide
             key={item.id} className={`imagens-cor ${isHovered === item.id ? 'hovered' : ''} ${item.id === 1 ? 'image-1' : item.id === 2 ? 'image-2' : 'image-3'}`}
+            onClick={() => setIsHovered(item.id)} 
             onMouseEnter={() => setIsHovered(item.id)} 
             onMouseLeave={() => setIsHovered(null)}>
         <div className={`slide-item ${isHovered === item.id ? 'hovered' : ''}`}>

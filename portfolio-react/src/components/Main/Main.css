@@ -68,6 +68,14 @@ h1 {
     -webkit-animation-delay: 0s;
 }
 
+
+@media screen and (max-width: 1120px) {
+    h1 {
+        padding-top: 28%;
+        
+    }
+}
+
 @media screen and (max-width: 768px) {
     .hero-container {
         max-width: 100%;
@@ -78,10 +86,8 @@ h1 {
     }
 }
 
-@media screen and (max-width: 1120px) {
-    h1 {
-        padding-top: 28%;
-
+@media  screen and (max-width: 420px) {
+    .hero-container img {
+        background-position: 50%;
     }
 }
-
