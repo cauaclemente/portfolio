@@ -127,6 +127,18 @@
     color: #d3d3d3;
 }
 
+.image-4 .portfolio-content {
+    color: #fff;
+}
+
+.image-4 .tec-title {
+    color: #000;
+}
+
+.image-4 .slide-tec {
+    color: #000;
+}
+
 .portfolio-content h2 {
     font-size: 25px;
     font-weight: bold;

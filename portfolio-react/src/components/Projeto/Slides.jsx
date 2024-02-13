@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import PiresBarbShop from "../assets/barbearia.png";
 import Shoppingcart from "../assets/shopping-cart.png";
 import Epoxi from "../assets/site-epoxi.png";
+import ListaDeTarefas from "../assets/lista-de-tarefas.png";
 
 import { Navigation, Pagination, Scrollbar, EffectCoverflow } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -68,6 +69,20 @@ const Projetos = () => {
       linkSite: "https://shopping-cart-gray-eta.vercel.app/",
       linkRepository: "https://github.com/cauaclemente/e-commerce",
     },
+    {
+      id: 4,
+      image: ListaDeTarefas,
+      name: "Lista de tarefas",
+      description: "Este sistema inclui funcionalidades essenciais, tais como login, criação de novos cadastros, edição de tarefas e adição de novas atividades à lista. Além disso, para garantir a segurança das informações, foi implementado rotas privadas",
+      technologies: [
+        "React",
+        "Firebase",
+        "React Router Dom",
+        "CSS",
+      ],
+      linkSite: "https://gerenciadordetarefas2024.netlify.app/",
+      linkRepository: "https://github.com/cauaclemente/Lista-de-tarefas-com-Firebase",
+    },
 
   ]
 
@@ -114,7 +129,7 @@ const Projetos = () => {
           >
        {data.map((item) => (
           <SwiperSlide
-            key={item.id} className={`imagens-cor ${isHovered === item.id ? 'hovered' : ''} ${item.id === 1 ? 'image-1' : item.id === 2 ? 'image-2' : 'image-3'}`}
+            key={item.id} className={`imagens-cor ${isHovered === item.id ? 'hovered' : ''} ${item.id === 1 ? 'image-1' : item.id === 2 ? 'image-2' : item.id === 4 ? "image-4" : 'image-3'}`}
             onClick={() => setIsHovered(item.id)} 
             onMouseEnter={() => setIsHovered(item.id)} 
             onMouseLeave={() => setIsHovered(null)}>
