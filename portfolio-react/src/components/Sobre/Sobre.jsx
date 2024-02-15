@@ -1,6 +1,6 @@
 
 import "./Sobre.css"
-import caminhoDoPdf from "../assets/CurriculoCauaClemente .pdf" 
+import caminhoDoPdf from "../assets/CurriculoCauaClemente.pdf" 
 
 const Sobre = () => {
   return (
