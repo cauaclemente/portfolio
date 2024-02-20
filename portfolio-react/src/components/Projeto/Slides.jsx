@@ -82,8 +82,8 @@ const Projetos = () => {
         "CSS",
         
       ],
-      linkSite: "https://gerenciadordetarefas2024.netlify.app/",
-      linkRepository: "https://github.com/cauaclemente/Lista-de-tarefas-com-Firebase",
+      linkSite: "https://sistemasdechamados2024.netlify.app/",
+      linkRepository: "https://github.com/cauaclemente/SIstemas-de-chamados",
     },
 
   ]
