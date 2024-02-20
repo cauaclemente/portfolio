@@ -78,7 +78,7 @@
 }
   
 .slide-item.hovered .slide-img {
-    filter: blur(10px);
+    filter: blur(15px);
 }
   
 .portfolio-content {
@@ -109,30 +109,47 @@
     color: #d3d3d3; 
 }
 
-.image-3 .portfolio-content h2 {
-    color: #d3d3d3;
-}
-
-.image-3 .tec-title {
-    color: #000;
-}
-
-.image-3 .slide-btn {
-    color: #000;
-    border: 2px solid #000;
-}
-
-.image-3 .slide-btn:hover {
-    background-color: #041132;
-    color: #d3d3d3;
-}
-
-.image-4 .portfolio-content {
+.image-1 .tec-title {
     color: #fff;
 }
 
 .image-4 .tec-title {
     color: #000;
+}
+
+.image-4 .title-slide {
+    color: #000;
+}
+
+.image-3 .portfolio-content {
+    color: #000;
+}
+
+.image-3 .tec-title {
+    color: #000;
+    font-weight: bold;
+}
+
+.image-3 .slide-btn {
+    border: 2px solid #000;
+    color: #000;
+}
+
+.image-3 .slide-btn:hover {
+    color: #fff;
+}
+
+.image-3 .slide-tec {
+    color: #000;
+}
+
+.image-4 .slide-btn {
+    border: 2px solid #000;
+    color: #000;
+}
+
+.image-4 .slide-btn:hover {
+    color: #fff;
 }
 
 .image-4 .slide-tec {

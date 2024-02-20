@@ -6,6 +6,7 @@ import PiresBarbShop from "../assets/barbearia.png";
 import Shoppingcart from "../assets/shopping-cart.png";
 import Epoxi from "../assets/site-epoxi.png";
 import ListaDeTarefas from "../assets/lista-de-tarefas.png";
+import Sistema from "../assets/sistemadechamados.png";
 
 import { Navigation, Pagination, Scrollbar, EffectCoverflow } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -48,7 +49,6 @@ const Projetos = () => {
         "React-icons",
         "Javascript",
         "CSS",
-        "HTML",
         "Canvas"
       ],
       linkSite: "https://pac-solucoes.vercel.app",
@@ -71,14 +71,16 @@ const Projetos = () => {
     },
     {
       id: 4,
-      image: ListaDeTarefas,
-      name: "Lista de tarefas",
-      description: "Este sistema inclui funcionalidades essenciais, tais como login, criação de novos cadastros, edição de tarefas e adição de novas atividades à lista. Além disso, para garantir a segurança das informações, foi implementado rotas privadas",
+      image: Sistema,
+      name: "Sistema de chamados",
+      description: "O sistema de chamados apresenta uma interface segura com login, permitindo aos usuários criar e editar o chamados. Essa funcionalidade agiliza a comunicação entre cliente e suporte, garantindo eficiência e gestão eficaz das demandas.",
       technologies: [
         "React",
         "Firebase",
+        "Context API",
         "React Router Dom",
         "CSS",
+        
       ],
       linkSite: "https://gerenciadordetarefas2024.netlify.app/",
       linkRepository: "https://github.com/cauaclemente/Lista-de-tarefas-com-Firebase",

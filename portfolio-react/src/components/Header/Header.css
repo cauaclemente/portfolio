@@ -81,12 +81,12 @@ li:hover {
       }
 
     .nav-menu {
-        position: fixed;
-        z-index: 2;
+        position: absolute;
+        z-index: 99;
         top: 7vh;
         right: 0;
-        width: 30%;
-        height: 32vh;
+        width: 40%;
+        height: 22vh;
         text-align: center;
         flex-direction: column;
         transform: translateX(100%);
@@ -104,5 +104,9 @@ li:hover {
 
     nav {
         background: transparent;
+    }
+
+    .list-item {
+        height: 52vh;
     }
 }
