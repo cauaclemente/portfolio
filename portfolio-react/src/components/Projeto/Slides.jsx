@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom";
 import PiresBarbShop from "../assets/barbearia.png";
 import Shoppingcart from "../assets/shopping-cart.png";
 import Epoxi from "../assets/site-epoxi.png";
-import ListaDeTarefas from "../assets/lista-de-tarefas.png";
 import Sistema from "../assets/sistemadechamados.png";
+import WebAutomotivos from "../assets/webautomotivos.png"
 
 import { Navigation, Pagination, Scrollbar, EffectCoverflow } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -40,19 +40,19 @@ const Projetos = () => {
     },
     {
       id: 2, 
-      image: Epoxi,
-      name: "Site Epoxi",
-      description: "Desenvolvi um site para uma empresa de serviços de epóxi, com o intuito de destacar os serviços oferecidos, proporcionando uma experiência envolvente e intuitiva aos visitantes.",
+      image: WebAutomotivos,
+      name: "WebAutomotivos",
+      description: "Desenvolvi uma plataforma de vendas de carros, proporcionando aos usuários a facilidade de visualizar anúncios e simultaneamente anunciar seus próprios veículos. Com interface intuitiva, você pode visualizar as opções disponíveis e entrar em contato diretamente com os vendedores,",
       technologies: [
         "React",
-        "React Router Dom",
+        "Firebase",
+        "TypeScript",
+        "Context Api",
+        "tailwind",
         "React-icons",
-        "Javascript",
-        "CSS",
-        "Canvas"
       ],
-      linkSite: "https://pac-solucoes.vercel.app",
-      linkRepository: "https://github.com/cauaclemente/pac_solucoes",
+      linkSite: "https://webautomotivos.netlify.app/",
+      linkRepository: "https://github.com/cauaclemente/PlataformaDeCarros",
     },
     {
       id: 3, 
@@ -85,6 +85,23 @@ const Projetos = () => {
       linkSite: "https://sistemasdechamados2024.netlify.app/",
       linkRepository: "https://github.com/cauaclemente/SIstemas-de-chamados",
     },
+    {
+      id: 5, 
+      image: Epoxi,
+      name: "Site Epoxi",
+      description: "Desenvolvi um site para uma empresa de serviços de epóxi, com o intuito de destacar os serviços oferecidos, proporcionando uma experiência envolvente e intuitiva aos visitantes.",
+      technologies: [
+        "React",
+        "React Router Dom",
+        "React-icons",
+        "Javascript",
+        "CSS",
+        "Canvas"
+      ],
+      linkSite: "https://pac-solucoes.vercel.app",
+      linkRepository: "https://github.com/cauaclemente/pac_solucoes",
+    },
+    
 
   ]
 
@@ -131,7 +148,7 @@ const Projetos = () => {
           >
        {data.map((item) => (
           <SwiperSlide
-            key={item.id} className={`imagens-cor ${isHovered === item.id ? 'hovered' : ''} ${item.id === 1 ? 'image-1' : item.id === 2 ? 'image-2' : item.id === 4 ? "image-4" : 'image-3'}`}
+            key={item.id} className={`imagens-cor ${isHovered === item.id ? 'hovered' : ''} ${item.id === 1 ? 'image-1' : item.id === 2 ? 'image-2' : item.id === 4 ? "image-3" :  item.id === 5 ? "image-2" : "image-3" }`}
             onClick={() => setIsHovered(item.id)} 
             onMouseEnter={() => setIsHovered(item.id)} 
             onMouseLeave={() => setIsHovered(null)}>
