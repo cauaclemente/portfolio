@@ -126,8 +126,18 @@
     font-weight: bold;
 }
 
-.image-3 .portfolio-content {
+.image-2 .slide-btn {
+    border: 2px solid #000;
     color: #000;
+}
+
+
+.image-2 .portfolio-content {
+    color: #000;
+}
+
+.image-2 .slide-btn:hover {
+    color: #fff;
 }
 
 .image-3 .tec-title {

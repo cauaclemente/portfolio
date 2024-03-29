@@ -1,6 +1,6 @@
 import "./Main.css"
 import Apresentação from '../Sobre/Apresentacao'
-import Projetos from '../Projeto/Slides'
+import Projetos from "../Projeto/Slides"
 import Contato from "../Formulario/Contato"
 
 const Inicio= () => {
@@ -8,7 +8,7 @@ const Inicio= () => {
   return (
     <>
       <main className='hero-container'>
-        <h1 className='header-title'> Procurando um Desenvolvedor <span style={{color : "#0ef"}}>Front-End</span>
+        <h1 className='header-title'> Procurando um Desenvolvedor <span style={{color : "#0ef"}}>Full Stack</span>
         ?</h1>
         <svg className='arrows'>
           <path className='a1' d='M0 0 L30 32 L60 0'></path> 

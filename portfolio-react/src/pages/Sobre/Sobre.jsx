@@ -1,6 +1,6 @@
 
 import "./Sobre.css"
-import caminhoDoPdf from "../assets/CurriculoCauaClemente.pdf" 
+import CurriculoPdf from "../../components/assets/CurriculoCauaClemente.pdf" 
 
 const Sobre = () => {
   return (
@@ -10,7 +10,7 @@ const Sobre = () => {
         <br />
         <p>Atualmente, estou matriculado na Universidade Paulista (UNIP), onde estou cursando minha graduação.
             Além disso, estou investindo meu tempo em cursos de programação, com foco no aprimoramento das habilidades
-             em React e JavaScript, através da realização de projetos práticos e estudando Node.js para me torna um full stack.</p>
+             em React, TypeScript e JavaScript, através da realização de projetos práticos e freelancers.</p>
         <br />
         <p>Tenho um compromisso sério com a criação de experiências de usuário excepcionais e estou aberto a oportunidades 
            que me permitam aprender e colaborar.
@@ -26,7 +26,7 @@ const Sobre = () => {
         <br />
         <p>Caso queira ver meu curriculo, basta clicar no botão abaixo para realizar o download </p> 
         <br />
-        <a href={caminhoDoPdf}
+        <a href={CurriculoPdf}
           target="_blank"
           rel="noopener noreferrer"
           style={{textDecoration : "none"}}>

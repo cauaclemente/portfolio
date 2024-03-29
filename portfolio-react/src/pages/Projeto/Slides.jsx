@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import "./Slide.css";
 import { NavLink } from "react-router-dom";
 
-import PiresBarbShop from "../assets/barbearia.png";
-import Shoppingcart from "../assets/shopping-cart.png";
-import Epoxi from "../assets/site-epoxi.png";
-import Sistema from "../assets/sistemadechamados.png";
-import WebAutomotivos from "../assets/webautomotivos.png"
+import PiresBarbShop from "../../components/assets/barbearia.png";
+import Shoppingcart from "../../components/assets/shopping-cart.png";
+import Epoxi from "../../components/assets/site-epoxi.png";
+import Sistema from "../../components/assets/sistemadechamados.png";
+import WebAutomotivos from "../../components/assets/webautomotivos.png"
 
 import { Navigation, Pagination, Scrollbar, EffectCoverflow } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -42,7 +42,7 @@ const Projetos = () => {
       id: 2, 
       image: WebAutomotivos,
       name: "WebAutomotivos",
-      description: "Desenvolvi uma plataforma de vendas de carros, proporcionando aos usuários a facilidade de visualizar anúncios e simultaneamente anunciar seus próprios veículos. Com interface intuitiva, você pode visualizar as opções disponíveis e entrar em contato diretamente com os vendedores,",
+      description: "Desenvolvi uma plataforma de vendas de carros, proporcionando aos usuários a facilidade de visualizar anúncios e simultaneamente anunciar seus próprios veículos.",
       technologies: [
         "React",
         "Firebase",
@@ -148,7 +148,8 @@ const Projetos = () => {
           >
        {data.map((item) => (
           <SwiperSlide
-            key={item.id} className={`imagens-cor ${isHovered === item.id ? 'hovered' : ''} ${item.id === 1 ? 'image-1' : item.id === 2 ? 'image-2' : item.id === 4 ? "image-3" :  item.id === 5 ? "image-2" : "image-3" }`}
+            key={item.id} className={`imagens-cor ${isHovered === item.id ? 'hovered' : ''} 
+            ${item.id === 1 ? 'image-1' : item.id === 2 ? 'image-2' : item.id === 4 ? "image-3" :  item.id === 5 ? "image-5" : "image-4" }`}
             onClick={() => setIsHovered(item.id)} 
             onMouseEnter={() => setIsHovered(item.id)} 
             onMouseLeave={() => setIsHovered(null)}>

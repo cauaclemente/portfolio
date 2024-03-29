@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Inicio from "./components/Main/Main";
-import Apresentação from "./components/Sobre/Apresentacao";
-import Projetos from "./components/Projeto/Slides";
-import Contato from "./components/Formulario/Contato";
+import Inicio from "./pages/Main/Main";
+import Apresentação from "./pages/Sobre/Apresentacao";
+import Projetos from "./pages/Projeto/Slides";
+import Contato from "./pages/Formulario/Contato";
 import Header from "./components/Header/Header";
 
 

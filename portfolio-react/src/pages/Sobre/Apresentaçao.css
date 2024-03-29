@@ -1,5 +1,5 @@
 .content-container{
-    height: 100vh;
+    height: 110vh;
 }
 
 .profile-content {
@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../assets/novo-fundo.jpg');
+    background-image: url('../../components/assets/novo-fundo.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
     width: 430px;
-    height: 595px;
+    height: 700px;
     background: linear-gradient(to right, #bdc3c7, #2c3e50);
     padding: 30px;
     border-radius: 8px;
@@ -120,6 +120,7 @@ h4 {
     font-weight: bolder;
     margin-top: 15px;
     text-align: center;
+    margin-top: -10px;
 }
 
 .icons-container {
@@ -156,25 +157,17 @@ h4 {
 }
 
 @media screen and (max-width: 480px) {
-    .profile-card {
-        width: 88%;
-        height: 660px;
-    }
+  .content-container {
+    height: 160vh;
 }
-@media screen and (max-width:420px) {
-    .content-container {
-        height: 160vh;
-    }
-
-    .profile-content {
-        height: 160vh;
+  .profile-card {
+        width: 88%;
+        height: 60rem;
     }
 }
 
 @media screen and (max-width: 390px) {
-    .profile-card {
-        width: 85%;
-    }
-
+  .profile-card {
+    height: 70rem ;
+  }
 }
-

@@ -1,9 +1,10 @@
 import "./Apresentaçao.css"
+import IconWithText from './iconWithtext';
+
+import Sobre from './Sobre';
 import Perfil from '../../components/assets/foto-de-perfil.jpeg'
 import { NavLink } from "react-router-dom";
 import { FaGithub,  FaLinkedinIn } from "react-icons/fa6";
-import IconWithText from './iconWithtext';
-import Sobre from './Sobre';
 
 
 function Apresentação() {
@@ -37,8 +38,10 @@ function Apresentação() {
                     iconName="JavaScript"
                     hoverText="JavaScript" />
                   <IconWithText 
-                    iconName="Typescript"
-                    hoverText="Typescript" />
+                    iconName="TypeScript"
+                    hoverText="TypeScript" />
+                </div>
+                <div className="icons-container">
                   <IconWithText 
                     iconName="Redux"
                     hoverText="Redux" />
@@ -48,6 +51,17 @@ function Apresentação() {
                   <IconWithText 
                     iconName="Css"
                     hoverText="Css" />
+                </div>
+                <div className="icons-container">
+                  <IconWithText
+                    iconName="NodeJs"
+                    hoverText="NodeJs" />
+                  <IconWithText
+                    iconName="PostgreSQL"
+                    hoverText="PostgreSQL" />
+                  <IconWithText
+                    iconName="NextJs"
+                    hoverText="NextJs" />
                 </div>
             </div>
             <Sobre />

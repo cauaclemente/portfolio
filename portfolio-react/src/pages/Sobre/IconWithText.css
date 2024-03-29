@@ -29,7 +29,6 @@
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     position: absolute;
-    text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,18 +37,6 @@
   
 .icon-container:hover .text-over-icon {
     opacity: 1;
-}
-
-@media screen and (max-width: 400px) {
-    .icon {
-        font-size: 28px;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .icon {
-        font-size: 25px;
-    }
 }
 
 @media screen and (max-width: 337px) {
