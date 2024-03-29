@@ -34,7 +34,7 @@ const colorMap = {
   Html: "#fe7c2c",
   NodeJs: "#2fff00",
   PostgreSQL: "#3087f9",
-  NextJs: "#000",
+  NextJs: "#b3b3b3" ,
 }
 
   

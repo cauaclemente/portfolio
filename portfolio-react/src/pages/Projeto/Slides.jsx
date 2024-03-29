@@ -3,7 +3,7 @@ import "./Slide.css";
 import { NavLink } from "react-router-dom";
 
 import PiresBarbShop from "../../components/assets/barbearia.png";
-import Shoppingcart from "../../components/assets/shopping-cart.png";
+import LaPizza from "../../components/assets/lapizza.png";
 import Epoxi from "../../components/assets/site-epoxi.png";
 import Sistema from "../../components/assets/sistemadechamados.png";
 import WebAutomotivos from "../../components/assets/webautomotivos.png"
@@ -33,7 +33,6 @@ const Projetos = () => {
         "Html",
         "Sass",
         "Biblioteca de animação",
-        "Canvas",
       ],
       linkSite: "https://piresbarbershop.vercel.app",
       linkRepository: "https://github.com/cauaclemente/site-para-barbearia-pires",
@@ -56,18 +55,19 @@ const Projetos = () => {
     },
     {
       id: 3, 
-      image: Shoppingcart,
-      name: "E-commerce",
-      description: "Este é um projeto pessoal feito para aprimorar minhas habilidades com gerenciamento de estado, nele pode selecionar itens, fazer buscas e adicioná-los ao carrinho, simplificando o processo de compra",
+      image: LaPizza,
+      name: "LaPizza",
+      description: "Este é um sistema desenvolvido para uma pizzaria aonde o garçon pode registrar pedidos via celular, que são automaticamente enviados à cozinha. Oferece funcionalidade para abrir e finalizar pedidos com o total calculado.",
       technologies:[
-        "React",
+        "Next.Js",
+        "Node.Js",
+        "PostgreSQL",
         "Context API",
-        "React-icons",
-        "Javascript",
-        "CSS",
+        "Express.Js",
+        "Sass",
       ],
-      linkSite: "https://shopping-cart-gray-eta.vercel.app/",
-      linkRepository: "https://github.com/cauaclemente/e-commerce",
+      linkSite: "https://lapizza-eta.vercel.app/",
+      linkRepository: "https://github.com/cauaclemente/Pizzaria-FrontEnd",
     },
     {
       id: 4,
@@ -96,7 +96,6 @@ const Projetos = () => {
         "React-icons",
         "Javascript",
         "CSS",
-        "Canvas"
       ],
       linkSite: "https://pac-solucoes.vercel.app",
       linkRepository: "https://github.com/cauaclemente/pac_solucoes",
@@ -149,10 +148,13 @@ const Projetos = () => {
        {data.map((item) => (
           <SwiperSlide
             key={item.id} className={`imagens-cor ${isHovered === item.id ? 'hovered' : ''} 
-            ${item.id === 1 ? 'image-1' : item.id === 2 ? 'image-2' : item.id === 4 ? "image-3" :  item.id === 5 ? "image-5" : "image-4" }`}
+            ${item.id === 1 ? 'image-1' : item.id === 2 ? 'image-2' : item.id === 3 ? "item-3" : item.id === 4 ? "image-4" :  
+            item.id === 5 ? "image-5" : "image-4" }`}
+
             onClick={() => setIsHovered(item.id)} 
             onMouseEnter={() => setIsHovered(item.id)} 
             onMouseLeave={() => setIsHovered(null)}>
+
         <div className={`slide-item ${isHovered === item.id ? 'hovered' : ''}`}>
             <img src={item.image} 
                 alt={item.name} 

@@ -85,8 +85,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,7 +93,7 @@
     transition: opacity 0.3s ease;
     text-align: center;
     font-size: 15px;
-    color: #000000;
+    color: #000;
     font-weight: bold;
     transition: 1s ease-in-out ;
 }
@@ -131,6 +129,9 @@
     color: #000;
 }
 
+.image-3 .portfolio-content {
+  color: #fff;
+}
 
 .image-2 .portfolio-content {
     color: #000;
@@ -138,24 +139,6 @@
 
 .image-2 .slide-btn:hover {
     color: #fff;
-}
-
-.image-3 .tec-title {
-    color: #000;
-    font-weight: bold;
-}
-
-.image-3 .slide-btn {
-    border: 2px solid #000;
-    color: #000;
-}
-
-.image-3 .slide-btn:hover {
-    color: #fff;
-}
-
-.image-3 .slide-tec {
-    color: #000;
 }
 
 .image-4 .tec-title {
@@ -179,6 +162,14 @@
     color: #000;
 }
 
+.image-5 .slide-btn {
+  color: #000;
+}
+
+.image-5 .slide-btn:hover {
+  color: #fff;
+}
+
 .portfolio-content h2 {
     font-size: 25px;
     font-weight: bold;
@@ -200,8 +191,7 @@
 .slide-btn {
     background: transparent;
     border-radius: 7px;
-    border: none;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     cursor: pointer;
     color: #fff;
     display: inline-block;
@@ -227,13 +217,11 @@
 
 .technologies {
     list-style: none;
-    padding: 0;
 }
 
 .portfolio-content ul {
     list-style: none;
     width: 100%;
-    padding: 0;
     text-align: center;
     display: flex;
     flex-wrap: wrap; 
@@ -243,13 +231,18 @@
 .portfolio-content li {
     display: inline-block;
     margin: 5px;
-    background-color: #717771; 
+    background-color: #626262; 
     padding: 5px;
     border-radius: 5px;
     color: #fff; 
     font-size: 13px; 
     font-weight: bold;
     font-family: 'Arial', sans-serif; 
+    transition: 0.5s ease-in-out;
+}
+
+.portfolio-content li:hover {
+  color: #000;
 }
 
 @media screen and (max-width: 950px) {
