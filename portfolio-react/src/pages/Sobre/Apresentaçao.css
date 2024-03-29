@@ -151,23 +151,16 @@ h4 {
     }
     .profile-card {
         margin-top: 5%;
-        max-height: 120%;
-
     }
 }
 
 @media screen and (max-width: 480px) {
   .content-container {
-    height: 160vh;
+    height: 110rem;
 }
   .profile-card {
         width: 88%;
-        height: 60rem;
+        height: 50rem;
     }
 }
 
-@media screen and (max-width: 390px) {
-  .profile-card {
-    height: 70rem ;
-  }
-}
