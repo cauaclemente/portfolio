@@ -58,7 +58,7 @@
 @media screen and (max-width: 390px) {
     .profile-sinopse {
         width: 85%;
-        height: 100vh;
+        height: 40rem;
     }
 
     .curriculo {
