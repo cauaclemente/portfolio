@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 
 import PiresBarbShop from "../../components/assets/barbearia.png";
 import LaPizza from "../../components/assets/lapizza.png";
-import Epoxi from "../../components/assets/site-epoxi.png";
 import Sistema from "../../components/assets/sistemadechamados.png";
 import WebAutomotivos from "../../components/assets/webautomotivos.png"
+import Ifood from "../../components/assets/ifood.png";
 
 import { Navigation, Pagination, Scrollbar, EffectCoverflow } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -47,7 +47,7 @@ const Projetos = () => {
         "Firebase",
         "TypeScript",
         "Context Api",
-        "tailwind",
+        "Tailwind",
         "React-icons",
       ],
       linkSite: "https://webautomotivos.netlify.app/",
@@ -62,6 +62,7 @@ const Projetos = () => {
         "Next.Js",
         "Node.Js",
         "PostgreSQL",
+        "Prisma",
         "Context API",
         "Express.Js",
         "Sass",
@@ -87,18 +88,21 @@ const Projetos = () => {
     },
     {
       id: 5, 
-      image: Epoxi,
-      name: "Site Epoxi",
-      description: "Desenvolvi um site para uma empresa de serviços de epóxi, com o intuito de destacar os serviços oferecidos, proporcionando uma experiência envolvente e intuitiva aos visitantes.",
+      image: Ifood,
+      name: "FSW Food",
+      description: "Este projeto se baseia no sistema do iFood, permitindo a simulação realista de pedidos de lanches. Oferecemos uma experiência completa, desde a seleção dos itens até a finalização do pedido.",
       technologies: [
-        "React",
-        "React Router Dom",
-        "React-icons",
-        "Javascript",
-        "CSS",
+        "Next.js",
+        "Node.js",
+        "Prisma",
+        "PostegreSQL",
+        "TypeScript",
+        "Context Api",
+        "Tailwind",
+        "NextAuth.js"
       ],
-      linkSite: "https://pac-solucoes.vercel.app",
-      linkRepository: "https://github.com/cauaclemente/pac_solucoes",
+      linkSite: "https://dish-delivery.vercel.app/",
+      linkRepository: "https://github.com/cauaclemente/FSW-Food",
     },
     
 
@@ -148,8 +152,8 @@ const Projetos = () => {
        {data.map((item) => (
           <SwiperSlide
             key={item.id} className={`imagens-cor ${isHovered === item.id ? 'hovered' : ''} 
-            ${item.id === 1 ? 'image-1' : item.id === 2 ? 'image-2' : item.id === 3 ? "item-3" : item.id === 4 ? "image-4" :  
-            item.id === 5 ? "image-5" : "image-4" }`}
+              ${item.id === 1 ? 'image-1' : item.id === 2 ? 'image-2' : item.id === 3 ? "item-3" : item.id === 4 ? "image-4" :  
+              item.id === 5 ? "image-4" : "image-5" }`}
 
             onClick={() => setIsHovered(item.id)} 
             onMouseEnter={() => setIsHovered(item.id)} 
